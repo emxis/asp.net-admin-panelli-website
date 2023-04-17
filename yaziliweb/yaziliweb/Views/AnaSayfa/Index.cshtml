@@ -1,0 +1,94 @@
+﻿@using yaziliweb.Models.siniflar
+@model List<AnaSayfa>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/web-yazilimweb/style.css">
+    <style>
+        body {
+            font-family: sans-serif !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul class="navbar">
+            <li><a href="./index.html">Ana Sayfa</a></li>
+            <li><a href="">Hakkımızda</a></li>
+            <li><a href="">Projeler</a></li>
+        </ul>
+        <ul class="login-right">
+            <li><a href="/Login/Index" class="login">Giriş Yap</a></li>
+        </ul>
+    </div>
+    @foreach (var x in Model)
+    {
+        <div class="bg-1" style="background-image:url(@x.bg1)">
+            <div>
+                <h2 class="baslik">@x.baslik</h2>
+                <button class="loginbtn" role="button">@x.buttongiris</button>
+            </div>
+        </div>
+    }
+    <div class="bg-2">
+        <div>
+            @foreach (var x in Model)
+            {
+                <h2>@x.baslikBg2</h2>
+                <p class="hakkimizdaYazim">@x.hakkimizdaAciklama</p>
+                <img src="@x.aciklamaFoto" alt="">
+            }
+        </div>
+    </div>
+    <div class="bg-3">
+        <h3>Özelliklerimiz</h3>
+        <div class="back"></div>
+        <div class="d-flex">
+            @foreach (var x in Model)
+            {
+                <div>
+                    <img src="@x.flexImage1" alt="">
+                    <h2>@x.ozellik1</h2>
+                    <p>@x.flexYazi3</p>
+                </div>
+                <div>
+                    <img src="@x.flexImage2" alt="">
+                    <h2>@x.ozellik2</h2>
+                    <p>@x.flexYazi2</p>
+                    <div>
+                        <img src="@x.flexImage3" alt="">
+                        <h2>@x.ozellik3</h2>
+                        <p>@x.flexYazi1</p>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+    <div class="bg-4">
+        @foreach (var x in Model)
+        {
+            <h2>@x.baslikBg4</h2>
+            <p>@x.amacimizYazi</p>
+        }
+    </div>
+    <div class="footer">
+        <div class="d-flex-2">
+            <div>
+                @foreach (var x in Model)
+                {
+                    <h3>@x.footer</h3>
+
+                }
+            </div>
+        </div>
+    </div>
+</body>
+</html>

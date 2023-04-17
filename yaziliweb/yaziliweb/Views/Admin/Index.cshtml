@@ -1,0 +1,22 @@
+﻿@using yaziliweb.Models.siniflar
+@model List<AnaSayfa>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<table style="border:1px solid gray; width:100%; text-align:center;">
+    <tr style="border:1px solid gray;">
+        <th>ID</th>
+        <th>İsim</th>
+        <th>Güncelle</th>
+    </tr>
+    <tr style="border:1px solid gray;">
+        @foreach (var x in Model)
+        {
+            <td>@x.id</td>
+            <td>Rana</td>
+            <td><a href="/Admin/AnaSayfaGetir/@x.id" style="border:2px solid green; border-radius:2rem; text-decoration:none; background:green; color:white;">Güncelle</a></td>
+        }
+    </tr>
+</table>

@@ -1,0 +1,44 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W3.CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css" />
+    <style>
+        body{
+            font-family:sans-serif !important;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width: 25%;">
+        <h3 class="w3-bar-item">Menu</h3>
+        <a href="/Admin/Index" class="w3-bar-item w3-button">Ana Sayfa</a>
+        <a href="/AnaSayfa/Index" class="w3-bar-item w3-button" target="_blank">Siteye Git</a>
+        <a href="/Login/LogOut/" class="w3-bar-item w3-button">Çıkış</a>
+    </div>
+
+    <!-- Page Content -->
+    <div style="margin-left:25%">
+
+        <div class="w3-container w3-teal">
+            <h1>My Page</h1>
+        </div>
+
+        <img src="img_car.jpg" alt="Car" style="width:100%">
+
+        <div class="w3-container">
+            @RenderBody()
+        </div>
+
+    </div>
+
+</body>
+</html>

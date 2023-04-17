@@ -1,0 +1,69 @@
+﻿@model yaziliweb.Models.siniflar.AnaSayfa
+@{
+    ViewBag.Title = "AnaSayfaGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>AnaSayfaGetir</h2>
+
+@using (Html.BeginForm("AnaSayfaGuncelle", "Admin", FormMethod.Post))
+{
+    @Html.LabelFor(x => x.id)
+    @Html.TextBoxFor(x => x.id, new { @class = "form-control", @readonly = "readonly" })
+    <br />
+    @Html.LabelFor(x => x.bg1)
+    @Html.TextBoxFor(x => x.bg1, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.baslik)
+    @Html.TextBoxFor(x => x.baslik, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.buttongiris)
+    @Html.TextBoxFor(x => x.buttongiris, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.baslikBg2)
+    @Html.TextBoxFor(x => x.baslikBg2, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.hakkimizdaAciklama)
+    @Html.TextAreaFor(x => x.hakkimizdaAciklama, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.aciklamaFoto)
+    @Html.TextBoxFor(x => x.aciklamaFoto, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.baslikBg4)
+    @Html.TextBoxFor(x => x.baslikBg4, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.amacimizYazi)
+    @Html.TextAreaFor(x => x.amacimizYazi, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.flexImage1)
+    @Html.TextBoxFor(x => x.flexImage1, new { @class = "form-control" });
+    <br />
+    @Html.LabelFor(x => x.flexImage2)
+    @Html.TextBoxFor(x => x.flexImage2, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.flexImage3)
+    @Html.TextBoxFor(x => x.flexImage3, new { @class = "form-control" });
+    <br />
+    @Html.LabelFor(x => x.ozellik1)
+    @Html.TextBoxFor(x => x.ozellik1, new { @class = "form-control" });
+    <br />
+    @Html.LabelFor(x => x.ozellik2)
+    @Html.TextBoxFor(x => x.ozellik2, new { @class = "form-control" });
+    <br />
+    @Html.LabelFor(x => x.ozellik3)
+    @Html.TextBoxFor(x => x.ozellik3, new { @class = "form-control" });
+    <br />
+    @Html.LabelFor(x => x.flexYazi1)
+    @Html.TextAreaFor(x => x.flexYazi1, new { @class = "form-control" }); ;
+    <br />
+    @Html.LabelFor(x => x.flexYazi2)
+    @Html.TextAreaFor(x => x.flexYazi2, new { @class = "form-control" }); ;
+    <br />
+    @Html.LabelFor(x => x.flexYazi3)
+    @Html.TextAreaFor(x => x.flexYazi3, new { @class = "form-control" }); ;
+    <br />
+    @Html.LabelFor(x => x.footer)
+    @Html.TextBoxFor(x => x.footer, new { @class = "form-control" })
+    <br />
+    <button class="btn">Ana Sayfayı Güncelle</button>
+}

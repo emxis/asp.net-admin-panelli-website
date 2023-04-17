@@ -1,0 +1,242 @@
+@font-face {
+    font-family: font;
+    src: url(/SourceSansPro-Regular.ttf);
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "font";
+    box-sizing: border-box;
+}
+.nav{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: fixed;
+    top: 0;
+    backdrop-filter: blur(2px);
+}
+.navbar{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.login-right{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.navbar li, .login-right li {
+    display: inline-block;
+}
+.navbar a,.login-right a{
+    text-decoration: none;
+    padding: 1.5rem;
+    display: block;
+    transition-duration: 0.5s;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    color: white;
+}
+.navbar a{
+    font-weight: 500;
+}
+.login-right a{
+    font-weight: bold;
+    background-color: #13aa52;
+}
+.navbar a:hover{
+    text-decoration:underline;
+}
+.bg-1{
+    width: 100%;
+    height: 85vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.baslik{
+    font-size: 3rem;
+    font-weight:900;
+    color: white;
+    font-family: monospace;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.loginbtn{
+    background-color: #13aa52;
+    border: 1px solid #13aa52;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    font-family: sans-serif;
+    outline: 0;
+    padding: 10px 25px;
+    text-align: center;
+    transform: translateY(0);
+    transition: 0.2s;
+}
+  
+.loginbtn:hover {
+    box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+    transform: translateY(2px);
+}
+.bg-2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+.bg-2 h2{
+    margin-top: 4.5rem;
+    font-weight: bold;
+    font-family: "font";
+    font-size: 2.5rem;
+}
+.bg-2 .hakkimizdaYazim{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 5vh;
+    font-size: 1.1rem;
+}
+.bg-2 img{
+    width: 20%;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.bg-3{
+    text-align: center;
+    background-image: url('https://images.pexels.com/photos/4709285/pexels-photo-4709285.jpeg?cs=srgb&dl=pexels-cottonbro-studio-4709285.jpg&fm=jpg&w=1920&h=1280');
+    padding: 3rem;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.bg-3 h3{
+    font-weight: bold;
+    font-family: "font";
+    font-size: 2.5rem;
+}
+.d-flex{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    z-index: 2;
+
+}
+.d-flex img{
+    width: 90%;
+    border-radius: 0.5rem;
+}
+.d-flex p{
+    font-size: 1.1rem;
+    line-height: 4.5vh;
+    padding: 0.2rem;
+}
+.bg-4{
+    text-align: center;
+    text-align: center;
+}
+.bg-4 h2{
+    font-weight: bold;
+    font-family: "font";
+    font-size: 2.5rem;
+}
+.bg-4 p{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 5vh;
+}
+.footer{
+    text-align: center;
+    background-color: #13aa52;
+    margin-top: 3rem;
+}
+.d-flex-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-form{
+    background-image: url("https://images.pexels.com/photos/1261578/pexels-photo-1261578.jpeg?cs=srgb&dl=pexels-stas-knop-1261578.jpg&fm=jpg&w=1920&h=1280");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.form-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 75vh;
+}
+.form-div div{
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.form-div div input{
+    width: 100%;
+    height: 2.3rem;
+    background-color: transparent;
+    outline: none;
+    border: 0;
+    border-radius: 0.1rem;
+    border-bottom: 2px solid #fff;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.form-div button{
+    padding: 1rem;
+    background-color: transparent;
+    margin-top: 1rem;
+    margin-right: 0.3rem;
+    margin-left: 0.3rem;
+    border: 3px solid #000;
+    border-radius: 1rem;
+}
+::placeholder{
+    color: #000;
+}
+
+@media screen and (max-width: 768px) {
+    .d-flex{
+        display: block !important;
+    }
+    .bg-2 p{
+        width: 85%;
+    }
+    .bg-2 img{
+        width: 85%;
+    }
+}

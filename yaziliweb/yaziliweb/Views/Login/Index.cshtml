@@ -1,0 +1,32 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/web-login/style.css">
+</head>
+<body>
+    <div class="bg-form">
+        @using (Html.BeginForm("Index", "Login", FormMethod.Post))
+        {
+            <div class="form-div">
+                <div>
+                    <img src="" alt="">
+                    <input type="text" name="kullaniciAdi" placeholder="Takma Adinizi Giriniz">
+                    <br>
+                    <input type="text" name="sifre" placeholder="Şifrenizi Giriniz">
+                    <br>
+                    <button>Giriş Yap</button>
+                </div>
+            </div>
+        }
+    </div>
+</body>
+</html>
